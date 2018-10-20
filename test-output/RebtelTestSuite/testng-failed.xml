@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="Failed suite [RebtelTestSuite]" parallel="tests">
+  <listeners>
+    <listener class-name="com.rebtel.listerners.TestNGCustomReportListener"/>
+    <listener class-name="com.rebtel.listerners.RebtelTestListener"/>
+    <listener class-name="com.rebtel.listerners.SuiteListener"/>
+  </listeners>
+  <test name="Nokia(failed)" parallel="tests">
+    <groups>
+      <run>
+        <include name="Regression"/>
+      </run>
+    </groups>
+    <classes>
+      <class name="com.rebtel.test.MobileTest">
+        <methods>
+          <include name="driverCleanUp"/>
+          <include name="testRebtelAssignment"/>
+          <include name="prepareBeforeTest"/>
+        </methods>
+      </class> <!-- com.rebtel.test.MobileTest -->
+    </classes>
+  </test> <!-- Nokia(failed) -->
+</suite> <!-- Failed suite [RebtelTestSuite] -->
