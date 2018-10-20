@@ -1,0 +1,27 @@
+MAX_WAIT_TIME_SECONDS=20
+IMPLICIT_WAIT_TIME_SECONDS=2
+MAX_INVISIBLE_WAIT_TIME_SECONDS=60
+CLEARAPPDATA=True
+DATASHEETPATH=src/test/resources/RebtelTestData/Input/excelData/Rebtel_Assignment.xls
+SCREENSHOTPATH=src/test/resources/RebtelTestData/Output/FailureScreenShot/
+CUSTOMIZEDREPORTPATH=src/test/resources/RebtelTestData/Output/CustomizedReport/
+DEVICETYPE=Android
+APPIUMVERSION=1.7.1
+NODEJSPATH=C:/Program Files/nodejs/node.exe
+APPIUMJSPATH=C:/Users/Kunal/AppData/Roaming/npm/node_modules/appium/build/lib/main.js
+PORT=4773
+OS=8.1
+APPACTIVITY=com.rebtel.android.client.RebtelActivity
+APPPACKAGE=com.rebtel.android
+TESTBED=Nokia
+LISTENER=com.rebtel.listerners.SuiteListener,com.rebtel.listerners.RebtelTestListener,com.rebtel.listerners.TestNGCustomReportListener
+TESTCOVERAGE=Regression
+CLASSNAME=com.rebtel.test.MobileTest
+
+#Device Farm
+Nokia=NB1GAD1810500975
+
+
+#*************Comments***********************
+#Update NodeJS Path for current machine
+#Update AppiiumJS or mainJS path for current machine
